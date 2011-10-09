@@ -1,1 +1,3 @@
-Devine is a sass grid that follows the Goldilocks approach to creating a repsonsive grid with golden proportions.
+Devine is a sass grid that follows [the Goldilocks Approach][1] to creating a responsive grid with golden proportions.
+
+[1]: https://github.com/designbyfront/The-Goldilocks-Approach
