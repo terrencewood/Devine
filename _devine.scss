@@ -7,52 +7,29 @@ $devine_a: 37em;
 $devine_b: 23em;
 $phi: 1.618em;
 
-@mixin devine_ab
-{
-    @media screen
-    {
-        max-width: $devine_ab - $phi;
-        margin: auto;
-        overflow: hidden;
-        @media (min-width: 37em)
-        {
-            padding: 0 $phi/2;
-            @media (max-width: 60em)
-            {
-                width: $devine_a - $phi/2;
-            }
-        }
-    }
-}
+@mixin devine_ab {
+  @media screen {
+    max-width: $devine_ab - $phi;
+    margin: auto;
+    overflow: hidden;
+    @media (min-width: 37em) {
+      padding: 0 $phi / 2;
+      @media (max-width: 60em) {
+        width: $devine_a - $phi / 2; } } } }
 
 @mixin devine_a {
-    @media screen
-    {
-        float: left;
-        display: inline;
-        max-width: $devine_a - 1.5 * $phi;
-        margin: 0 $phi/2;
-        @media (min-width: 37em)
-        {
-            @media (max-width: 60em)
-            {
-            }
-        }
-    }
-}
+  @media screen {
+    float: left;
+    display: inline;
+    max-width: $devine_a - 1.5 * $phi;
+    margin: 0 $phi / 2;
+    @media (min-width: 37em) {
+      @media (max-width: 60em) {} } } }
 
-@mixin devine_b
-{
-    @include devine_a;
-    @media screen
-    {
-        @media (min-width: 37em)
-        {
-            width: $devine_b - $phi * 1.5;
-            @media (max-width: 60em)
-            {
-                width: 100%;
-            }
-        }
-    }
-}
+@mixin devine_b {
+  @include devine_a;
+  @media screen {
+    @media (min-width: 37em) {
+      width: $devine_b - $phi * 1.5;
+      @media (max-width: 60em) {
+        width: 100%; } } } }
